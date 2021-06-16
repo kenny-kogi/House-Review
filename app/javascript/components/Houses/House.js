@@ -50,7 +50,7 @@ const House = ({ attributes }) => {
       <HouseName>{attributes.name}</HouseName>
       <div className="airline-score">{attributes.avg_score}</div>
       <LinkWrapper>
-        <Link to={`/airline/${attributes.slug}`}>View House</Link>
+        <Link to={`/house/${attributes.slug}`}>View House</Link>
       </LinkWrapper>
     </Card>
   );

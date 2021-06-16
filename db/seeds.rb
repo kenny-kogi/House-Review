@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 houses = House.create([
   { 
-    name: "United Airlines",
+    name: "Mali House",
     image_url: "https://open-flights.s3.amazonaws.com/United-Airlines.png"
   }, 
   { 
-    name: "Southwest",
+    name: "Southwest House",
     image_url: "https://open-flights.s3.amazonaws.com/Southwest-Airlines.png"
   },
   { 
@@ -19,7 +19,7 @@ houses = House.create([
     image_url: "https://open-flights.s3.amazonaws.com/Delta.png" 
   }, 
   { 
-    name: "Alaska Airlines",
+    name: "Alaska House",
     image_url: "https://open-flights.s3.amazonaws.com/Alaska-Airlines.png" 
   }, 
   { 
@@ -27,7 +27,7 @@ houses = House.create([
     image_url: "https://open-flights.s3.amazonaws.com/JetBlue.png" 
   }, 
   { 
-    name: "American Airlines",
+    name: "American House",
     image_url: "https://open-flights.s3.amazonaws.com/American-Airlines.png" 
   }
 ])
@@ -40,7 +40,7 @@ reviews = Review.create([
         house: houses.first
     },
         {
-        title: "Old airline",
+        title: "Old House",
         description: "I had a bad time",
         score: 1,
         house: houses.first

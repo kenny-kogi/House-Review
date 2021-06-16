@@ -10,8 +10,9 @@ module Api
             end
 
             def show
-                house = House.find_by(slug: params[:slug])
-
+                # byebug
+                house = House.find_by(slug: params[:id])
+                # byebug
                 render json: HouseSerializer.new(house, options).serialized_json
             end
 
@@ -27,7 +28,7 @@ module Api
             end
 
             def update
-                house = House.find_by(slug: params[:slug])
+                house = House.find_by(slug: params[:id])
                 
                 if house.update(house_params)
                     render json: AirlineSerializer.new(house, options).serialized_json
@@ -37,7 +38,7 @@ module Api
             end
 
             def destroy
-                house = House.find_by(slug: params[:slug])
+                house = House.find_by(slug: params[:id])
                 
                 if house.destroy
                     head :no_content
