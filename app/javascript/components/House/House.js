@@ -43,11 +43,24 @@ const House = (props) => {
   }, []);
 
   const handleChange = (e) => {
-    e.preventDefaut();
+    setReview(
+      Object.assign({}, { ...review, [e.target.name]: e.target.value })
+    );
+    console.log("review", review);
   };
 
   const handleSubmit = (e) => {
     e.preventDefaut();
+    const csrfToken = document.querySelector("[name=csrf-token]").content;
+    axios.defaults.headers.common["X-CSRF-TOKEN"] = csrfToken;
+
+    const house_id = house.data.id;
+    axios
+      .post("/api/v1/reviews", { review, house_id })
+      .then((resp) => {
+        debugger;
+      })
+      .catch((err) => console.log(err));
   };
 
   return (

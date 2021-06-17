@@ -9,20 +9,20 @@ const ReviewForm = (props) => {
         </div>
         <div className="field">
           <input
+            onChange={props.handleChange}
+            value={props.review.title}
             type="text"
             name="title"
             placeholder="Review Title"
-            onChange={props.handleChange}
-            value={props.review.title}
           />
         </div>
         <div className="field">
           <input
+            onChange={props.handleChange}
+            value={props.review.description}
             type="text"
             name="description"
             placeholder="Review Description"
-            onChange={props.handleChange}
-            value={props.review.description}
           />
         </div>
         <div className="field">
