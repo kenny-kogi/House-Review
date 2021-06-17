@@ -65,6 +65,11 @@ const House = (props) => {
       .catch((err) => console.log(err));
   };
 
+  const setRating = (score, e) => {
+    e.preventDefault();
+    setReview({ ...review, score });
+  };
+
   return (
     <Wrapper>
       {loaded && (
@@ -85,6 +90,7 @@ const House = (props) => {
               handleSubmit={handleSubmit}
               attributes={house.data.attributes}
               review={review}
+              setRating={setRating}
             />
           </Column>
         </>
