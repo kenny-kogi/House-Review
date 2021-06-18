@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import styled from "styled-components";
-
+import Rating from "../Rating/Rating";
 //Styling for the Airline Component
 const Card = styled.div`
   border: 1px solid #efefef;
@@ -48,7 +48,7 @@ const House = ({ attributes }) => {
         <img src={attributes.image_url} alt={attributes.name} />
       </HouseLogo>
       <HouseName>{attributes.name}</HouseName>
-      <div className="airline-score">{attributes.avg_score}</div>
+      <Rating score={attributes.avg_score} />
       <LinkWrapper>
         <Link to={`/house/${attributes.slug}`}>View House</Link>
       </LinkWrapper>
