@@ -5,8 +5,9 @@ import Rating from "../Rating/Rating";
 //Styling for the Airline Component
 const Card = styled.div`
   border: 1px solid #efefef;
-  background: #fff;
+  background: grey;
   text-align: center;
+  border-radius: 20px;
 `;
 const HouseLogo = styled.div`
   width: 50px;
@@ -33,7 +34,7 @@ const LinkWrapper = styled.div`
   a {
     color: #fff;
     background: #000;
-    border-radius: 4px;
+    border-radius: 40px;
     padding: 10px 50px;
     border: 1px solid #000;
     width: 100%;
