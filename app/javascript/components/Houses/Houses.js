@@ -43,6 +43,7 @@ const Houses = () => {
       .get("http://localhost:3000/api/v1/houses")
       .then((resp) => {
         const houses = resp.data.data;
+        console.log(resp.data.data);
 
         setHouse(houses);
       })

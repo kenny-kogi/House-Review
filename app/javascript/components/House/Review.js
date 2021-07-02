@@ -15,12 +15,12 @@ const RatingContainer = styled.div`
 
 const Title = styled.div`
   padding: 20px 0 0 0;
-  font-size: 10px;
+  font-size: 20px;
 `;
 
 const Description = styled.div`
   padding: 0 0 20px 0;
-  font-size: 14px;
+  font-size: 15px;
 `;
 
 const Review = (props) => {

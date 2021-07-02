@@ -7,7 +7,7 @@ const Card = styled.div`
   border: 1px solid #efefef;
   background: grey;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 2 0px;
 `;
 const HouseLogo = styled.div`
   width: 50px;

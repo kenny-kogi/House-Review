@@ -22,7 +22,7 @@ const Footer = () => {
           <Column>
             <Heading>Services</Heading>
             <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
+            <FooterLink href="#">House Reviews</FooterLink>
             <FooterLink href="#">Coding</FooterLink>
             <FooterLink href="#">Teaching</FooterLink>
           </Column>

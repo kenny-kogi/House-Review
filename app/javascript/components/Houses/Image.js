@@ -16,7 +16,7 @@ const ImageView = styled.div`
 const Image = () => {
   return (
     <ImageView>
-      <h1>House Reviews</h1>
+      <h1>Honest House Reviews</h1>
     </ImageView>
   );
 };
