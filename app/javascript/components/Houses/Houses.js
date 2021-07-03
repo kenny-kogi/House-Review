@@ -4,7 +4,6 @@ import House from "./House";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import Image from "./Image";
-import Footer from "./Footer";
 
 const Home = styled.div`
   text-align: center;
@@ -65,7 +64,6 @@ const Houses = () => {
         </Header> */}
         <Grid>{grid}</Grid>
       </Home>
-      <Footer />
     </>
   );
 };
