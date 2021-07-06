@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: house_review_production
-  username: house_review
-  password: <%= ENV['HOUSE_REVIEW_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL']%>
+  # username: house_review
+  # password: <%= ENV['HOUSE_REVIEW_DATABASE_PASSWORD'] %>
