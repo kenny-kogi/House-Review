@@ -1,4 +1,4 @@
-# Ruby on Rails Tutorial House Review Application
+# Ruby on Rails House Review Application
 
 ## License
 
